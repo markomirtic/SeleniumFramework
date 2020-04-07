@@ -61,6 +61,14 @@ namespace ElementInteractions
             element.Click();
 
         }
+        [TestMethod]
+        public void MarkoTest1()
+        {
+            driver.Navigate().GoToUrl("https://ultimateqa.com/simple-html-elements-for-automation/");
+            var element = driver.FindElement(By.Id("idExample"));
+            element.Click();
+
+        }
 
 
 
@@ -136,6 +144,8 @@ namespace ElementInteractions
         [TestCategory("Element Interrogation")]
         public void ElementInterrogationTest()
         {
+
+
             
             driver.Url = "https://www.ultimateqa.com/simple-html-elements-for-automation/";
             //driver.Manage().Window.Maximize();
