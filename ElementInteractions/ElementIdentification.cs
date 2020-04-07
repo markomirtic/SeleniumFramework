@@ -63,8 +63,19 @@ namespace ElementInteractions
             //testing
 
         }
+
         [TestMethod]
         public void MarkoTest1()
+        {
+            driver.Navigate().GoToUrl("https://ultimateqa.com/simple-html-elements-for-automation/");
+            var element = driver.FindElement(By.Id("idExample"));
+            element.Click();
+
+            //testing2
+
+        }
+        [TestMethod]
+        public void MarkoTest2()
         {
             driver.Navigate().GoToUrl("https://ultimateqa.com/simple-html-elements-for-automation/");
             var element = driver.FindElement(By.Id("idExample"));
