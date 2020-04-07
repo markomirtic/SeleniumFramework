@@ -60,6 +60,8 @@ namespace ElementInteractions
             var element = driver.FindElement(By.Id("idExample"));
             element.Click();
 
+            //testing
+
         }
         [TestMethod]
         public void MarkoTest1()
