@@ -48,10 +48,10 @@ namespace WebdriverTimeoutsTutorial
         public void Test1_FixedExplicitly()
         {
             _driver.Navigate().GoToUrl(URL.SlowAnimationUrl);
-            FillOutCreditCardInfo();
+           // FillOutCreditCardInfo();
             var wait = new WebDriverWait(_driver, TimeSpan.FromSeconds(15));
-            wait.Until(ExpectedConditions.ElementToBeClickable(By.Id("go"))).Click();
-            Assert.IsTrue(wait.Until(ExpectedConditions.ElementIsVisible(By.Id("success"))).Displayed);
+            wait.Until(ExpectedConditions.ElementToBeClickable(By.Id("idExample"))).Click();
+            Assert.IsTrue(wait.Until(ExpectedConditions.ElementIsVisible(By.Id("Button success"))).Displayed);
         }
 
         [TestMethod]
